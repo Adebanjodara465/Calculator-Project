@@ -1,0 +1,60 @@
+.calculator {
+    width: 400px;
+    height: 650px;
+    background-color: #E0B0FF;
+    margin: 50px auto;
+    /*Ask to Explain*/
+    border-radius: 5px;
+    box-shadow: 0 3px 9px rgb(170, 51, 106);
+    text-align: center;
+}
+
+.display {
+
+    background-color: darkgray;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: gray;
+}
+
+.history,
+result {
+    margin: 0;
+    /*explain*/
+    color: white;
+}
+
+.keyboard {
+    /*display grid creates rows and columns **/
+    display: grid;
+    /*define the number of columns to be repeated in a row and fraction(equal spaces) between the columns**/
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    /*explain*/
+    transition: background 0.3s ease;
+    box-shadow: 0 3px 9px rgb(170, 51, 106);
+    cursor: pointer;
+    background: linear-gradient(to bottom, lightgray, darkgray)
+}
+
+button:hover {
+    background: linear-gradient(to bottom, gray, darkgray);
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.operator {
+    color: #7F00FF;
+}
